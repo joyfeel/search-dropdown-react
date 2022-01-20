@@ -133,7 +133,7 @@ const SearchDropdown = () => {
 					id='search-select'
 					className={cls(
 						'focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-5 pr-12 py-2 sm:text-sm border-2 border-gray-300 rounded-md',
-						selectedItem && 'pl-7'
+						selectedItem && 'pl-9'
 					)}
 					autoComplete='off'
 					placeholder={searchResult.length > 0 ? 'Search' : 'Select'}
