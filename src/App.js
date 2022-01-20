@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useStoreActions } from 'easy-peasy';
+import SearchDropdown from './components/SearchDropdown';
 
 const COUNTRY_API_URL = 'https://restcountries.com/v3.1/all';
 
@@ -30,7 +31,11 @@ function App() {
 		return <div>Loading......</div>;
 	}
 
-	return <h1 className='text-3xl font-bold underline'>Hello world!</h1>;
+	return (
+		<div className='flex justify-center items-center h-screen'>
+			<SearchDropdown />
+		</div>
+	);
 }
 
 export default App;
